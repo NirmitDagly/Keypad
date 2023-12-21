@@ -14,7 +14,7 @@ final class KeypadTests: XCTestCase {
 	
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-		keypadViewModel = KeypadViewModel()
+		keypadViewModel = KeypadViewModel(itemDetails: [String: Any]())
     }
 
     override func tearDownWithError() throws {

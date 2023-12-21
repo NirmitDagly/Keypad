@@ -14,7 +14,7 @@ import SwiftUI
 public struct KeypadView: View {
 	@State var itemDescription: String
 	@State var itemPrice: String
-	@StateObject private var keypadViewModel = KeypadViewModel()
+	@StateObject private var keypadViewModel = KeypadViewModel(itemDetails: [String: Any]())
 	
 	public var body: some View {
 		GeometryReader { geometryReader in
