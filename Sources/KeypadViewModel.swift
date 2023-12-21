@@ -95,7 +95,7 @@ public class KeypadViewModel: ObservableObject {
 	}
 	
 	//MARK: When User clicks on add button, after all validations took in place
-	func addItemsToCart(forItem itemDescription: String, withPrice itemPrice: String) {
+	public func addItemsToCart(forItem itemDescription: String, withPrice itemPrice: String) {
 		itemDetails = ["itemDescreption": itemDescription, "itemPrice": itemPrice]
 		print("The items that needs to be added to the cart is: \(itemDetails)")
 	}
