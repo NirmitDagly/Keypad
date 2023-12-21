@@ -20,8 +20,9 @@ public class KeypadViewModel: ObservableObject {
 	
 	@Published public var itemDetails = [String: Any]()
 	
-	public init() {
+	public init(itemDetails: [String: Any]) {
 		//Define memberwise initializers here...
+		self.itemDetails = itemDetails
 	}
 
 	func displayAlertWithMessage(withID id: AlertType, andTitle title: String, withMessage message: String) {
