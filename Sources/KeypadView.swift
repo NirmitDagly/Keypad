@@ -12,7 +12,6 @@ import SwiftUI
 }
 
 public struct KeypadView: View {
-	
 	@State var itemDescription: String
 	@State var itemPrice: String
 	@StateObject private var keypadViewModel = KeypadViewModel()
@@ -56,6 +55,11 @@ public struct KeypadView: View {
 			})
 		}
 		.background(Color.black)
+	}
+	
+	public init(itemDescription: String, itemPrice: String) {
+		self.itemDescription = itemDescription
+		self.itemPrice = itemPrice
 	}
 }
 
@@ -318,4 +322,3 @@ struct VerticalDividerViewForKeypad: View {
 			.background(Color.gray.opacity(0.5))
 	}
 }
-	

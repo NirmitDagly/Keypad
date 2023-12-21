@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@main
 struct KeypadApp: App {
 	
     var body: some Scene {
