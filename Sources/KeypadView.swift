@@ -290,8 +290,7 @@ struct AddButton: View {
 					return
 				}
 				
-				print("Add button pressed.")
-				print("The price $\(itemPrice) for custom item is \(itemDescription).")
+				_ = doSomething()
 			} label: {
 				Text("Add")
 					.foregroundStyle(Color.white)
@@ -302,6 +301,10 @@ struct AddButton: View {
 			}
 			.frame(width: geometryReader.size.width, height: 240)
 		}
+	}
+	
+	public func doSomething() -> [String: Any] {
+		return keypadViewModel.addItemsToCart(forItem: itemDescription, withPrice: itemPrice)
 	}
 }
 

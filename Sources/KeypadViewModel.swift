@@ -88,4 +88,11 @@ class KeypadViewModel: ObservableObject {
 	func validateEnteredAmount(currentEnteredAmount currentPrice: String) -> Bool {
 		return Double(currentPrice)! <= 10000.00 ? true : false
 	}
+	
+	//MARK: When User clicks on add button, after all validations took in place
+	func addItemsToCart(forItem itemDescription: String, withPrice itemPrice: String) -> [String: Any] {
+		let itemDetails = ["itemDescreption": itemDescription, "itemPrice": itemPrice]
+		print("The items that needs to be added to the cart is: \(itemDetails)")
+		return itemDetails
+	}
 }
