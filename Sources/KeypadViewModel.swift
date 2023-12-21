@@ -19,6 +19,10 @@ public class KeypadViewModel: ObservableObject {
 	@Published var infoMessage: AlertInfo?
 	
 	@Published var canNavigate = false
+	
+	public init() {
+		//Define memberwise initializers here...
+	}
 
 	func displayAlertWithMessage(withID id: AlertType, andTitle title: String, withMessage message: String) {
 		infoMessage = AlertInfo(id: id, title: title, message: message)
