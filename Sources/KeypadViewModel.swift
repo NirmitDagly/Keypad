@@ -14,7 +14,7 @@ struct KeyPadButtons: Hashable {
 	var buttonTag: Int
 }
 
-class KeypadViewModel: ObservableObject {
+public class KeypadViewModel: ObservableObject {
 	
 	@Published var infoMessage: AlertInfo?
 	
