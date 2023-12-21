@@ -11,13 +11,13 @@ import SwiftUI
 	KeypadView(itemDescription: "", itemPrice: "0.00")
 }
 
-struct KeypadView: View {
+public struct KeypadView: View {
 	
 	@State var itemDescription: String
 	@State var itemPrice: String
 	@StateObject private var keypadViewModel = KeypadViewModel()
 	
-	var body: some View {
+	public var body: some View {
 		GeometryReader { geometryReader in
 			VStack(spacing: 0) {
 				ItemDescriptionView(itemDescription: $itemDescription)
